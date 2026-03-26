@@ -384,7 +384,7 @@ Na Arduino IDE, instale todas as [bibliotecas listadas](#bibliotecas-necessária
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/soundfender.git
+git clone https://github.com/Laura-Jeronimo/soundfender.git
 
 # Abra soundfender.ino na Arduino IDE
 # Selecione: Ferramentas > Placa > Arduino Uno
