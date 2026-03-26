@@ -934,7 +934,7 @@ void telaDados(char key) {
   if (cursorMenu == 0) {
     // Atualiza valor de temperatura apenas se mudou
     if (tempAtual != ultTempImpressa) {
-      lcd.setCursor(5, 1); lcd.print(F("T:")); lcd.print(tempAtual, 1);
+      lcd.setCursor(5, 1); lcd.print(F("T:")); lcd.print(tempAtual, 1); lcd.print(F("  "));
       lcd.setCursor(12,1); lcd.write(223); lcd.print(useFahrenheit ? F("F") : F("C"));
       desenharBarraTotal(tempAtual, tempMin, tempMax);
       ultTempImpressa = tempAtual;
@@ -950,7 +950,7 @@ void telaDados(char key) {
     }
   } else if (cursorMenu == 1) {
     if (humAtual != ultHumImpressa) {
-      lcd.setCursor(6, 1); lcd.print(F("UMID:")); lcd.print(humAtual, 0);
+      lcd.setCursor(6, 1); lcd.print(F("UMID:")); lcd.print(humAtual, 0); lcd.print(F("  "));
       lcd.setCursor(13,1); lcd.print(F("%"));
       desenharBarraTotal(humAtual, humMin, humMax);
       ultHumImpressa = humAtual;
@@ -965,7 +965,7 @@ void telaDados(char key) {
     }
   } else if (cursorMenu == 2) {
     if (lumAtual != ultLumImpressa) {
-      lcd.setCursor(6, 1); lcd.print(F("LUZ: ")); lcd.print(lumAtual, 0);
+      lcd.setCursor(6, 1); lcd.print(F("LUZ: ")); lcd.print(lumAtual, 0); lcd.print(F("  "));
       lcd.setCursor(13,1); lcd.print(F("%"));
       desenharBarraTotal(lumAtual, lumMin, lumMax);
       ultLumImpressa = lumAtual;
